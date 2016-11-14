@@ -8,8 +8,8 @@ function makeBuffer() {
 var buffer = makeBuffer();
 
 //добавить значения буфера
-buffer('Hello');
-buffer('world');
+buffer(' Hello');
+buffer(' world');
 buffer('!');
 alert(buffer());
 
