@@ -1,26 +1,23 @@
 function makeCounter(){
 	var count = 1;
 
-	function counter1(){
+	function counter(){
 		return count;
 	}
 
-   counter1.get =function() {
+   counter.get =function() {
 	return ++count;
-};
-	/*counter1.prototype.get = function() {
-		return count++;
-	};*/
-
-	counter1.set = function(value) {
+    };
+	
+	counter.set = function(value) {
 		count=value;
 	};
 
-	counter1.reset = function() {
+	counter.reset = function() {
 		count=0;
 	};
 
-	return counter1;
+	return counter;
 }
 
 var counter1 = makeCounter();
